@@ -19,6 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
+<<<<<<< Upstream, based on branch 'master' of https://github.com/ryanwest91/AndroidA3.git
         android:layout_marginLeft="85dp"
         android:layout_marginTop="150dp"
         android:layout_toRightOf="@+id/textView1" />
@@ -34,6 +35,12 @@
         android:text="CheckBox" />
 
 </RelativeLayout>
+=======
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:text="Button" />
+=======
+>>>>>>> 33270eb large text
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -70,5 +77,15 @@
             android:layout_height="wrap_content"
             android:text="RadioButton" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
