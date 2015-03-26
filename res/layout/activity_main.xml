@@ -14,33 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-<<<<<<< Upstream, based on branch 'master' of https://github.com/ryanwest91/AndroidA3.git
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="150dp"
-        android:layout_toRightOf="@+id/textView1" />
 
-    <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="78dp"
-        android:text="CheckBox" />
-
-</RelativeLayout>
-=======
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="113dp"
-        android:text="Button" />
-=======
->>>>>>> 33270eb large text
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -77,15 +51,5 @@
             android:layout_height="wrap_content"
             android:text="RadioButton" />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/radio1"
-        android:layout_marginTop="44dp"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
