@@ -1,6 +1,6 @@
-package com.example.studentdatabase;   // **Update your package name here!
+package com.example.a3;   
 
-public abstract class Person {
+public abstract class Person implements Comparable<Person>{
 
     protected String _name;     /** The person's name */
     protected String _address;  /** The person's home address */
@@ -47,4 +47,33 @@ public abstract class Person {
                + "Address: " + _address + "\n"
                + "Status: "+ currentStatus() + "\n";
     }
+    
+    /** Compare method to be used in Collection.sort()
+     * Comparison is based on person's name
+     * @param p - a person to compare to
+     * @return 1, 0, -1 corresponding to "greater than", "equal" or "less than".
+     */
+    public int compareTo(Person p){
+    	//compare as many letters as there are in a smaller word
+    	for (int i = 0; i < Math.min(_name.length(), p.getName().length()); i++){
+    		//if this letter is later in the alphabet, return "greater than" (1)
+    		if (_name.charAt(i) > p.getName().charAt(i))
+    			return 1;
+    		else {
+    			//otherwise "less than" (-1)
+    			if (_name.charAt(i) < p.getName().charAt(i))
+    				return -1;	
+    		}
+    	}
+    	//if all previous letters are equal, the word with more letters is considered "greater"
+    	if (_name.length() > p.getName().length())
+    		return 1;
+    	else{
+    		if (_name.length() < p.getName().length())
+    			return -1;
+    		else return 0;
+    	}
+    	
+    }
+    
 }
