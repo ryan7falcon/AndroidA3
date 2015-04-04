@@ -9,7 +9,7 @@ public class Student extends Person{
 	boolean _feesPaid; /**True if the student paid the tuition fee*/
 	double _gpa; /**Student's GPA*/
 	
-	  /**
+	 /**
      * Constructor.
      * @param name - The student's first and last name
      * @param address - The student's address
