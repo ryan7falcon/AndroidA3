@@ -100,6 +100,10 @@ public class MainActivity extends Activity {
 				Double.parseDouble(_fGpa.getText().toString()), _cbFees.isChecked()
 				)
 		);
+		_fName.setText("");
+		_fAddress.setText("");
+		_fGpa.setText("");
+		_cbFees.setChecked(false);
 	}
 
 	/**
@@ -107,6 +111,13 @@ public class MainActivity extends Activity {
 	 */
 	public void onSort(){
 		Collections.sort(_studentList);
+		AlertDialog dlg = new AlertDialog.Builder(this).create();
+		dlg.setTitle("Sorting");
+		//A string that will be displayed
+		String message = "Database has been sorted!";
+		dlg.setMessage(message);
+		dlg.setButton(AlertDialog.BUTTON_POSITIVE, "OK", (DialogInterface.OnClickListener)null);
+		dlg.show(); 
 	}
 
 	/**
@@ -120,7 +131,7 @@ public class MainActivity extends Activity {
 		//Fill the string with data
 		for (int i = 0; i < _studentList.size(); i++)
 		{
-			message += _studentList.get(i) + "\n \n";
+			message += _studentList.get(i) + "\n";
 		}
 		dlg.setMessage(message);
 		dlg.setButton(AlertDialog.BUTTON_POSITIVE, "OK", (DialogInterface.OnClickListener)null);
